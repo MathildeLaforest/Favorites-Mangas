@@ -1,0 +1,241 @@
+/* Design Général ----------------------------------- */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-image: url(images/asanoha.png);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* Design Typographique ----------------------------------- */
+p{
+	font-size: 20px;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+h2{
+	color: black;
+	font-size: 60px;
+	text-align: center;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+h3{
+	color: black;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+/* Menu ----------------------------------- */
+header{
+	width: 100vw;
+	height: 100px;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+	position: fixed;
+}
+
+.menuFantome{
+	width: 100vw;
+	height: 100px;
+}
+
+label{
+	font-size: 40px;
+	display: none;
+	color: white;
+	margin-right: 80px;
+	margin-top: 23px;
+}
+
+#switch {
+	display: none;
+}
+
+nav a:hover{
+	background-color: #656565;
+}
+
+.boutonMenu{
+	color: white;
+	text-decoration: none;
+	margin-right: 80px;
+}
+
+.logoHeader {
+	display: flex;
+	justify-content: center;
+	height: 100px; 
+	width: 200px;
+}
+
+@media (max-width: 600px){
+	header{
+		display: block;
+	}
+
+	header img{
+		float: left;
+	}
+
+	label{
+		display: block;
+		float: right;
+	}
+
+	nav{
+		display: none;
+	}
+
+	#switch:checked + nav{
+		display: block;
+		clear: both;
+	}
+
+	nav a{
+		width: 100%;
+		display: block;
+		text-align: center;
+		background-color: grey;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 4px solid black;
+	}
+
+	nav a:hover{
+		background-color: #656565;
+	}
+}
+
+/* Colonne Centrale ----------------------------------- */
+.colonneCentrale{
+	width: 80vw;
+	min-height: 80vh;
+	margin-left: 10vw;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	box-shadow: 0px 0px 10px black;
+}
+
+@media(max-width: 1000px){
+	.colonneCentrale{
+		width: 100vw;
+		margin-left: 0px;
+	}
+}
+
+/* Section n°1 ----------------------------------- */
+.photoIntro{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 5vw;
+}
+
+/* Section n°2 ----------------------------------- */
+.section2{
+	width: 100%;
+	min-height: 20vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.cartesSection2{
+	width: 20vw;
+	min-height: 12vh;
+	text-align: center;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.logoSection2{
+	width: 60%;
+	margin-top: 1vw;
+}
+
+@media(max-width: 1000px){
+	.section2{
+		flex-direction: column;
+		
+	}
+
+	.cartesSection2{
+		width: 40vw;
+		min-height: 27vh;
+		margin: 30px;
+	}
+}
+
+@media(max-width: 1000px){
+	.cartesSection2{
+		width: 80vw;
+		min-height: 27vh;
+	}
+}
+
+/* Section n°3 ----------------------------------- */
+.cartesSection3{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 25px 0;
+}
+
+.petitePhoto{
+	width: 30%;
+	border-radius: 25px;
+	margin-left: 25px;
+}
+
+.texteSection3{
+	width: 60%;
+	text-align: justify;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+
+@media(max-width: 1000px){
+	.cartesSection3{
+		flex-direction: column;
+	}
+
+	.petitePhoto{
+		width: 50%;
+	}
+
+	.texteSection3{
+		width: 50%;
+		margin-left: 0px;
+		font-size: 20px;
+		margin-top: 20px;
+	}
+}
+
+/* Footer ----------------------------------- */
+footer{
+	width: 100vw;
+	height: 15vh;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.boutonFin{
+	color: white;
+	text-decoration: none;
+	margin: 25px;
+}
